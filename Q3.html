@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q3</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Resource Group</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>VM1</td>
+            <td>RG1</td>
+            <td>Azure VM for production environment</td>
+        </tr>
+        <tr>
+            <td>VM2</td>
+            <td>RG2</td>
+            <td>Azure VM for development environment</td>
+        </tr>
+        <tr>
+            <td>VM3</td>
+            <td>RG3</td>
+            <td>Azure VM running MySQL database for production</td>
+        </tr>
+        <tr>
+            <td>VM4</td>
+            <td>RG4</td>
+            <td>Azure VM running MySQL database for development</td>
+        </tr>
+        <tr>
+            <td>Registry1</td>
+            <td>RG4</td>
+            <td>Azure Container Registry for all images</td>
+        </tr>
+        <tr>
+            <td>Storage1</td>
+            <td>RG3</td>
+            <td>Production Storage Account</td>
+        </tr>
+        <tr>
+            <td>Storage2</td>
+            <td>RG3</td>
+            <td>Development Storage Account</td>
+        </tr>
+        <tr>
+            <td>VNET1</td>
+            <td>RG1</td>
+            <td>Azure Virtual Network with address space 10.0.0.0/16</td>
+        </tr>
+        <tr>
+            <td>Sub1</td>
+            <td>RG1</td>
+            <td>Subnet from VNET1 for production env with address 10.0.0.0/24</td>
+        </tr>
+        <tr>
+            <td>Sub2</td>
+            <td>RG2</td>
+            <td>Subnet from VNET1 for development env with address 10.0.1.0/24</td>
+        </tr>
+
+    </table>
+    <p>
+        You create User6 and assign him the Owner role at the Cloud subscription level.
+    </p>
+    <p>
+        In which resource groups should User6 create a new Azure virtual machine (VM) and a container registry?
+    </p>
+    <p> To answer, select the appropriate options from the drop-down menus.</p>
+
+    <br />
+    Azure VM:
+    <select id="select1">
+        <option value=""></option>
+        <option value="wrong">RG1 only</option>
+        <option value="correct">RG1 and RG2 only</option>
+        <option value="wrong">RG1, RG2 and RG3 only</option>
+        <option value="Wrong">RG4 only</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        Download images
+        <select id="select2">
+            <option value=""></option>
+            <option value="correct">RG4 only</option>
+            <option value="wrong">RG1 and RG3 only</option>
+            <option value="wrong">RG1, RG2 and RG3 only</option>
+            <option value="wrong">RG1, RG2, RG3,RG4</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <br />
+
+    <a href="Q2.html">Previous Question</a>
+    <a href="Q4.html">Next Question</a>
+
+</body>
+</html>

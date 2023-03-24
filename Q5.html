@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q5</title>
+</head>
+<body>
+    <p>
+        You are an administrator of Azure Infrastucture as a Service (IaaS) for Company1, which has 100 virtual machines (VM) sunning the Linux operating system.
+        The VMs are deployed in a resource group called Company1RG. You need to deploy the log analytics extension on all Linux VMs. The deployment has to
+        be automated using PowerShell. As a first step you create a policy rule and save it to LogAnalyticsExtension.json.
+    </p>
+    <p>
+        Which cmdlets should you use to automate the deployment? To answer, complete the commands by selecting the correct parts from the drop-down menus.
+    </p>
+    <p>
+        <select id="select1">
+            <option value=""></option>
+            <option value="corect">New-AzPolicyDefinition</option>
+            <option value="wrong">New-AzPolicyAssignment</option>
+            <option value="wrong">Get-AzResourceGroup</option>
+            <option value="wrong">Get-AzPolicyDefinition</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+        -Name- 'LogAnalyticsExtLinux' -DisplayName 'Install Log Analytics ext on Linux VMs' -Policy 'LogAnalyticsExtLinux'
+
+    </p>
+    <p>
+        $rg = <select id="select2">
+            <option value=""></option>
+            <option value="wrong">New-AzPolicyDefinition</option>
+            <option value="wrong">New-AzPolicyAssignment</option>
+            <option value="correct">Get-AzResourceGroup</option>
+            <option value="wrong">Get-AzPolicyDefinition</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+        -Name 'Company1RG'
+    </p>
+    <p>
+        $policy = <select id="select3">
+            <option value=""></option>
+            <option value="wrong">New-AzPolicyDefinition</option>
+            <option value="wrong">New-AzPolicyAssignment</option>
+            <option value="wrong">Get-AzResourceGroup</option>
+            <option value="correct">Get-AzPolicyDefinition</option>
+        </select>
+        <span class="output3"></span>
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </p>
+    <p>
+    <select id="select4">
+        <option value=""></option>
+        <option value="wrong">New-AzPolicyDefinition</option>
+        <option value="correct">New-AzPolicyAssignment</option>
+        <option value="wrong">Get-AzResourceGroup</option>
+        <option value="wrong">Get-AzPolicyDefinition</option>
+    </select>
+    <span class="output4"></span>
+    <button onclick="getOption4()"> Check answer </button>
+
+    <script type="text/javascript">function getOption4() {
+            selectElement = document.querySelector('#select4');
+            output = selectElement.value;
+            document.querySelector('.output4').textContent = output;
+        }</script>
+        -Name 'LogAnalyticsExtLinux' -PolicyDefinition $policy -Scope $rg.ResourceId
+        </p>
+</body>
+</html>

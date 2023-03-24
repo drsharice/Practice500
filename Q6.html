@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AZ-500 Security Question 6</title>
+</head>
+<body>
+    <p>
+        You are the Azure administrator for your company. The company has a subscription named Production in your existing tenant.
+    </p>
+
+    <p>
+        You host a web appllication www.mycorp.com on virtual machine MYCORPVM connected to a subnet named prod-subnet within the virtual network(VNet) VNET01.
+    </p>
+    <p>You are asked to limit internet access for the virtual machines (VMs) within the VNET01.</p>
+    <p>You need to deploy and configure an Azure solution that restricts internet access to www.mycorp.com</p>
+    <p>How should you configure this solution? To answer, select the appropriate options from the drop-down menus.</p>
+    <P>
+
+        <br />
+        Solution
+        <select id="select1">
+            <option value="no data"></option>
+            <option value="correct">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="wrong">Application rule</option>
+            <option value="wrong">FirewallSubnet</option>
+            <option value="wrong">AzureFirewallSubnet</option>
+        </select>
+    </P>
+    <p>
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <P>
+        <br />
+        Rule to create
+        <select id="select2">
+            <option value="no data"></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="correct">Application rule</option>
+            <option value="wrong">FirewallSubnet</option>
+            <option value="wrong">AzureFirewallSubnet</option>
+        </select>
+    </P>
+    <p>
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+    <P>
+        <br />
+        Subnet name
+        <select id="select3">
+            <option value="no data"></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="wrong">Application rule</option>
+            <option value="wrong">FirewallSubnet</option>
+            <option value="correct">AzureFirewallSubnet</option>
+        </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <br />
+
+    <a href="Q5.html">Pevious Question</a>
+    <a href="Q7.html">Next Question</a>
+
+</body>
+</html>

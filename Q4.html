@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q4</title>
+    <script type="text/JavaScript">function checkAnswers() {
+            var Q2_1 = document.getElementById("Q2_1");
+            // determine whether the answer is correct
+            if (Q2_1.elements[0].checked)
+                alert("Congratulations your answer is correct");
+            else
+                alert("Incorrect, The correct answer")
+        }
+        function checkAnswers1() {
+            var Q2_2 = document.getElementById("Q2_2");
+            // determine whether the answer is correct
+            if (Q2_2.elements[1].checked)
+                alert("Congratulations your answer is correct");
+            else
+                alert("Incorrect, The correct answer")
+        }
+        function checkAnswers2() {
+            var Q2_3 = document.getElementById("Q2_3");
+            // determine whether the answer is correct
+            if (Q2_3.elements[1].checked)
+                alert("Congratulations your answer is correct");
+            else
+                alert("Incorrect, The correct answer")
+        }</script>
+    <script>
+    function checkAnswers3()
+    {
+    var Q2_4 = document.getElementById("Q2_4");
+    // determine whether the answer is correct
+    if (Q2_4.elements[1].checked)
+    alert("Congratulations your answer is correct");
+    else
+    alert("Incorrect, The correct answer")
+    }</script>
+</head>
+<body>
+    <p>
+        You are the Azure administrator for your company. Your company has several Azure Enterprise applications configured.
+        Some of the applications are run interactively and some are not.
+    </p>
+    You need to recommend the permissions of the following Azure Enterprise applications:
+    <ul>
+        <li>APP1 - Available to all users to input expense claims using their mobile devices</li>
+        <li>APP2 - Used to synchronize identities to a third-party system</li>
+        <li>APP3 - Available to select power users to modify custom user attributes in Azure Active Directory</li>
+    </ul>
+    For each of the following statements, select Yes if the statement
+    
+        <form id="Q2_1" onsubmit="checkAnswers()" action="">
+            <p>APP1 should be assigned the appropriate delegated permissions </p>
+            <label><input type="radio" name="Question" value="radio" id="Question 0"> Yes</label>
+            <label><input type="radio" name="Question" value="radio" id="Question 1"> No</label>
+
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+        <br />
+        <form id="Q2_2" onsubmit="checkAnswers1()" action="">
+            <p> APP2 should be assigned the appropriate delegated permissions</p>
+            <label><input type="radio" name="Question" value="radio" id="Question 0"> Yes</label>
+            <label><input type="radio" name="Question" value="radio" id="Question 1"> No</label>
+
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+        <br />
+        <form id="Q2_3" onsubmit="checkAnswers2()" action="">
+            <p>APP3 should be assigned the appropriate application permissions </p>
+            <label><input type="radio" name="Question" value="radio" id="Question 0"> Yes</label>
+            <label><input type="radio" name="Question" value="radio" id="Question 1"> No</label>
+
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+        <br />
+        <form id="Q2_4" onsubmit="checkAnswers3()" action="">
+            <p>App1 should be assigned the appropriate applications </p>
+            <label><input type="radio" name="Question" value="radio" id="Question 0"> Yes</label>
+            <label><input type="radio" name="Question" value="radio" id="Question 1"> No</label>
+
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+    
+    <br />
+    <br />
+
+    <a href="Q3.html">Previous Question</a>
+    <a href="Q5.html">Next Question</a>
+
+
+</body>
+</html>

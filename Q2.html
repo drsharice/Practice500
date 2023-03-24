@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q2</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>User</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td>User1</td>
+            <td>Contributor</td>
+        </tr>
+        <tr>
+            <td>User2</td>
+            <td>AcrPull</td>
+        </tr>
+        <tr>
+            <td>User3</td>
+            <td>AcrPush</td>
+        </tr>
+        <tr>
+            <td>User4</td>
+            <td>AcrimageSigner</td>
+        </tr>
+    </table>
+    <P>
+    <p>
+
+        You need to determine which users can upload and download the container images stored in Registry1 based on the attached role for each user.
+    </p>
+    <p>Which users should you choose? </p>
+
+    <br />
+    Upload Images
+    <select id="select1">
+        <option value=""></option>
+        <option value="wrong">User1 only</option>
+        <option value="correct">User1 and User3 only</option>
+        <option value="wrong">User1, User2 and User3 only</option>
+        <option value="Wrong">User1, User2, User3,User4</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        Download images
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">User1 only</option>
+            <option value="wrong">User1 and User3 only</option>
+            <option value="correct">User1, User2 and User3 only</option>
+            <option value="wrong">User1, User2, User3,User4</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <br />
+
+    <a href="Q1.html">Previous Question</a>
+    <a href="Q3.html">Next Question</a>
+
+
+
+</body>
+</html>
