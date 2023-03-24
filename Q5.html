@@ -24,7 +24,8 @@
 
         <span class="output"></span>
         <button onclick="getOption()"> Check answer </button>
-        <script type="text/javascript">function getOption() {
+        <script type="text/javascript">
+            function getOption() {
                 selectElement = document.querySelector('#select1');
                 output = selectElement.value;
                 document.querySelector('.output').textContent = output;
@@ -44,7 +45,8 @@
         <span class="output1"></span>
         <button onclick="getOption2()"> Check answer </button>
 
-        <script type="text/javascript">function getOption2() {
+        <script type="text/javascript">
+            function getOption2() {
                 selectElement = document.querySelector('#select2');
                 output = selectElement.value;
                 document.querySelector('.output1').textContent = output;
@@ -62,29 +64,33 @@
         <span class="output3"></span>
         <button onclick="getOption3()"> Check answer </button>
 
-        <script type="text/javascript">function getOption3() {
+        <script type="text/javascript">
+            function getOption3() {
                 selectElement = document.querySelector('#select3');
                 output = selectElement.value;
                 document.querySelector('.output3').textContent = output;
             }</script>
     </p>
     <p>
-    <select id="select4">
-        <option value=""></option>
-        <option value="wrong">New-AzPolicyDefinition</option>
-        <option value="correct">New-AzPolicyAssignment</option>
-        <option value="wrong">Get-AzResourceGroup</option>
-        <option value="wrong">Get-AzPolicyDefinition</option>
-    </select>
-    <span class="output4"></span>
-    <button onclick="getOption4()"> Check answer </button>
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong">New-AzPolicyDefinition</option>
+            <option value="correct">New-AzPolicyAssignment</option>
+            <option value="wrong">Get-AzResourceGroup</option>
+            <option value="wrong">Get-AzPolicyDefinition</option>
+        </select>
+        <span class="output4"></span>
+        <button onclick="getOption4()"> Check answer </button>
 
-    <script type="text/javascript">function getOption4() {
-            selectElement = document.querySelector('#select4');
-            output = selectElement.value;
-            document.querySelector('.output4').textContent = output;
-        }</script>
+        <script type="text/javascript">
+            function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
         -Name 'LogAnalyticsExtLinux' -PolicyDefinition $policy -Scope $rg.ResourceId
-        </p>
+    </p>
+    <a href="Q4.html">Previous Question</a>
+    <a href="Q6.html">Next Question</a>
 </body>
 </html>
