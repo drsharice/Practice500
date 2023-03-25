@@ -3,88 +3,105 @@
 <head>
     <meta charset="utf-8" />
     <title>AZ-500 Security Question 1</title>
-</head>
-<body>
-    <p>
+    <style>
+      p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+        </head >
+        <body >
+        <p >
+       
         Your Organization has a subscription that hosts resources for multiple applications in Azure.The subscription is part of a tenant
         that has synchronization enabled using AD Connect with on-premises Active Directory Domain Services (AD DS). The resources for each application are
         contained in individual resource groups.
-    </p>
-    <p>
+         </p >
+        <p >
+        
         As additional users are added to the application team, you add roles for those usrs at the resources group level. Users can manage multiple applications
-    </p>
-    <p>You need to efficiently manage permissions assigned to Azure Active Directory (Azure AD) users to access these resource groups.</p>
-    <br />
-    <P>
+         </p >
+        <p > You need to efficiently manage permissions assigned to Azure Active Directory (Azure AD) users to access these resource groups.</p >
+        <br / >
+        <P >
         Solution: You create Azure AD groups for each application, add users to these groups, and assign roles to the groups st the resource group level.
-        <br />
+        <br / >
         Does ths Solution meet the goal?
-        <select id="select1">
-            <option value="no data"></option>
-            <option value="wrong">No</option>
-            <option value="correct">Yes</option>
-        </select>
-    </P>
-    <p>
+        <select id="select1" >
+        <option value="no data" > </option >
+        <option value="wrong" > No</option >
+        <option value="correct" > Yes</option >
+        </select >
+        </P >
+        <p >
         The value of the option selected is:
-        <span class="output"></span>
-    </p>
-    <button onclick="getOption()"> Check answer </button>
+        <span class="output" > </span >
+        </p >
+        <button onclick="getOption()" > Check answer </button >
 
-    <script type="text/javascript">function getOption() {
-    selectElement = document.querySelector('#select1');
-    output = selectElement.value;
-    document.querySelector('.output').textContent = output;
-}</script>
-    <P>
+        <script type="text/javascript" >
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document .querySelector('.output').textContent = output;
+        }
+
+        </script >
+        <P >
         Solution: You create security groups in AD DS, add users in these groups, and assign roles to the groups st the resource group level.
-        <br />
+        <br / >
         Does ths Solution meet the goal?
-        <select id="select2">
-            <option value="no data"></option>
-            <option value="wrong">No</option>
-            <option value="correct">Yes</option>
-        </select>
-    </P>
-    <p>
+        <select id="select2" >
+        <option value="no data" > </option >
+        <option value="wrong" > No</option >
+        <option value="correct" > Yes</option >
+        </select >
+        </P >
+        <p >
         The value of the option selected is:
-        <span class="output1"></span>
-    </p>
-    <button onclick="getOption2()"> Check answer </button>
+        <span class="output1" > </span >
+        </p >
+        <button onclick="getOption2()" > Check answer </button >
 
-    <script type="text/javascript">function getOption2() {
-    selectElement = document.querySelector('#select2');
-    output = selectElement.value;
-    document.querySelector('.output1').textContent = output;
-}</script>
+        <script type="text/javascript" >
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document .querySelector('.output1').textContent = output;
+        }
+
+        </script >
 
 
-    <P>
+        <P >
         Solution: You remove permissions for the users at the resource group level and apply the same permissions for each individual user at the subscription level.
-        <br />
+        <br / >
         Does ths Solution meet the goal?
-        <select id="select3">
-            <option value="no data"></option>
-            <option value="correct">No</option>
-            <option value="wrong">Yes</option>
-        </select>
-    </P>
-    <p>
+        <select id="select3" >
+        <option value="no data" > </option >
+        <option value="correct" > No</option >
+        <option value="wrong" > Yes</option >
+        </select >
+        </P >
+        <p >
         The value of the option selected is:
-        <span class="output3"></span>
-    </p>
-    <button onclick="getOption3()"> Check answer </button>
+        <span class="output3" > </span >
+        </p >
+        <button onclick="getOption3()" > Check answer </button >
 
-    <script type="text/javascript">function getOption3() {
-    selectElement = document.querySelector('#select3');
-    output = selectElement.value;
-    document.querySelector('.output3').textContent = output;
-}</script>
-    <br />
-    <br />
-    
+        <script type="text/javascript" >
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document .querySelector('.output3').textContent = output;
+        }
 
-    <a href="Q2.html">Next Question</a>
+        </script >
+        <br / >
+        <br / >
 
-</body>
-</html>
+
+        <a href="Q2.html" > Next Question</a >
+
+        </body >
+        </html >
