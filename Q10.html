@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q10</title>
+</head>
+<body>
+    <p>
+        You manage an Azure account with a subscription named Sub1 for your company. Sub1 
+        has three Azure virtual machines(VMs) named SERVER01, SERVER02 and SERVER03.
+    </p>
+    <p>
+       SERVER01 and SERVER02 are used by the sales team, and SERVER02 is used by the development team.
+        All servers are in a resource group named RG1 in Sub1
+    </p>
+    <p>
+        The development team regularly makes changes to SERVER03 including adding memory
+        and additional storage. They also need the ability to create new VMs in the future.
+    </p>
+    <p>
+        You need to limit access to the development team and perform the necessary tasks using the least privilege
+        model. They also need the ability to create new VMs in the future.
+    </p>
+    <p>
+        Which three actions should you perform
+    </p>
+    <p>
+        1.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
+            <option value="wrong">Create a new subscription named Sub2</option>
+            <option value="wrong">Move SERVER03 to Sub2</option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
+            <option value="correct">Create a new resource group named RG2.</option>
+            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
+            <option value="wrong">Move SERVER03 to RG2</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
+            <option value="wrong">Create a new subscription named Sub2</option>
+            <option value="wrong">Move SERVER03 to Sub2</option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
+            <option value="correct">Create a new resource group named RG2.</option>
+            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
+            <option value="wrong">Move SERVER03 to RG2</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        3.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
+            <option value="wrong">Create a new subscription named Sub2</option>
+            <option value="wrong">Move SERVER03 to Sub2</option>
+            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
+            <option value="wrong">Create a new resource group named RG2.</option>
+            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
+            <option value="correct">Move SERVER03 to RG2</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <br />
+
+    <a href="Q9.html">Previous Question</a>
+    <a href="Q11.html">Next Question</a>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q5</title>
+</head>
+<body>
+    <p>
+        You configure Microsoft Sentinel (formerly, Azure Sentinel) in your company's Azure subscription.'
+    </p>
+    <p>
+        Your compan's security team needs to monitor events on your subscription and Azure Active Directory
+        (Azure AD) tenant by creating alerts and playbooks.
+    </p>
+    <p>
+        Which data connector should you use for each case?
+    </p>
+
+    <p>
+        Alert when a resource lock is removed from a Virtual Machine
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Azure AD Identity</option>
+            <option value="wrong">Azure AD</option>
+            <option value="correct">Azure Activity</option>
+
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        Run a playbook when a user is removed
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Azure AD Identity</option>
+            <option value="correct">Azure AD</option>
+            <option value="wrong">Azure Activity</option>
+        </select>
+    </P>
+    <p>
+        
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        Monitor when a user is assigned with the owner permission in a resource group
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Azure AD Identity</option>
+            <option value="wrong">Azure AD</option>
+            <option value="correct">Azure Activity</option>
+        </select>
+    </P>
+    <p>
+ 
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <br />
+
+    <a href="Q8.html">Previous Question</a>
+    <a href="Q10.html">Next Question</a>
+
+</body>
+</html>

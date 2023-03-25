@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AZ-500 Security Question 1</title>
+</head>
+<body>
+
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Azure AD role</th>
+            <th>Subscription role</th>
+        </tr>
+        <tr>
+            <td>User1</td>
+            <td>Application developer</td>
+            <td>Owner</td>
+        </tr>
+        <tr>
+            <td>User2</td>
+            <td>None</td>
+            <td>Contributor</td>
+        </tr>
+        <tr>
+            <td>User3</td>
+            <td>None</td>
+            <td>Security Admin</td>
+        </tr>
+        <tr>
+            <td>User4</td>
+            <td>Conditional Access administrator</td>
+            <td>None</td>
+        </tr>
+        </table>
+        <p>
+            Your company owns an Azure Active Directory (Azure AD) tenant named myCompany.com. You create
+            a subscription in the tenant named subscriptionA. The tenant has the users, the roles defined in Azure Active Directory
+            the subscriptionA level shown in the exhibit.
+        </p>
+        <p>
+            You have a resource group named resourcegroup1 in subscriptionA
+        </p>
+        <p>
+            You need to understand how these role assignments effect the ability of users to perform tasks in resourcegroup1.
+        </p>
+        <p>
+            Which users can performs the actions specified in the answer key
+        </p>
+        <P>
+            <br />
+            User's who can manage permissions for resourcegroup1.
+            <select id="select1">
+                <option value=""></option>
+                <option value="correct">User 1</option>
+                <option value="wrong">User 1 and User 2</option>
+                <option value="wrong">User 1, User 2 and User 3</option>
+                <option value="wrong">User 1,User 2, User 3 and User 4</option>
+            </select>
+        </P>
+        <p>
+            <span class="output"></span>
+        </p>
+        <button onclick="getOption()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+        <P>
+            Users who can create virtual machines (VMs) in resourcegroup1.
+            <select id="select2">
+                <option value=""></option>
+                <option value="wrong">User 1</option>
+                <option value="correct">User 1 and User 2</option>
+                <option value="wrong">User 1, User 2 and User 3</option>
+                <option value="wrong">User 1,User 2, User 3 and User 4</option>
+            </select>
+        </P>
+        <p>
+
+            <span class="output1"></span>
+        </p>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+
+
+        <P>
+            Users who can register applications in the tenant
+
+            <select id="select3">
+                <option value=""></option>
+                <option value="correct">User 1</option>
+                <option value="wrong">User 1 and User 2</option>
+                <option value="wrong">User 1, User 2 and User 3</option>
+                <option value="wrong">User 1,User 2, User 3 and User 4</option>
+            </select>
+        </P>
+        <p>
+            <span class="output3"></span>
+        </p>
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+        <br />
+        <br />
+
+
+        <a href="Q7.html">Pevious Question</a>
+        <a href="Q9.html">Next Question</a>
+
+</body>
+</html>
