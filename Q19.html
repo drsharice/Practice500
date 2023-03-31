@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q19</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <p>
+
+        What is a managed, private Docker registry service based on the open-source Docker Registry for storing and managing your
+        private Docker container images?
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Azure App Services</option>
+            <option value="correct">Azure Container Registry</option>
+            <option value="wrong">Locks</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        
+        ACR comes in which three different SKUs:
+        <select id="select2">
+            <option value=""></option>
+            <option value="correct">Basic, Standard and Premium</option>
+            <option value="wrong">Free, Basic and Standard</option>
+            <option value="wrong">High, Low, medium</option>
+            <option value="wrong">Cheap, Expensive and right</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <br />
+
+    <a href="Q18.html">Previous Question</a>
+    <a href="Q20.html">Next Question</a>
+
+
+
+</body>
+</html>

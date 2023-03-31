@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q18</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        You need to prevent administrative users from accidentally deleting a virtual
+        network named VNET1. The administrative users must be allowed to modify
+        the settings of VNET1.
+    </p>
+    <p>
+
+
+        <br />
+        In the Settings blade for virtual network VNET, select
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Users</option>
+            <option value="wrong">Automation script</option>
+            <option value="wrong">Tags</option>
+            <option value="correct">Locks</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        To add a lock, select
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Delete</option>
+            <option value="wrong">Copy</option>
+            <option value="correct">Add</option>
+            <option value="wrong">Paste</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <br />
+
+    <a href="Q17.html">Previous Question</a>
+    <a href="Q19.html">Next Question</a>
+
+
+
+</body>
+</html>

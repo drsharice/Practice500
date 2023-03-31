@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q21</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Serveless Kubernetes</p>
+    <p>Choose the correct security recommendations for Azure Container Instances:</p>
+
+    <p>
+
+        Azure Container Registry can be configured to require authentication (often with a service principal)
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Use a public container registry</option>
+            <option value="correct">Use a private container registry</option>
+            <option value="wrong">Azure Container Registry</option>
+            <option value="wrong">Monitor and scan container images</option>
+            <option value="wrong">Protect credentials</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        Azure Container Registry integrates with Azure Security Center to automatically scan images pushed to a registry
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Use a public container registry</option>
+            <option value="correct">Use a private container registry</option>
+            <option value="wrong">Azure Container Registry</option>
+            <option value="wrong">Monitor and scan container images</option>
+            <option value="wrong">Protect credentials</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+    <P>
+        3. Azure Key Vault is a cloud service that safeguards encryption keys and secrets 
+        (such as certificates, connection strings, and passwords) for containerized applications.
+        <select id="select3">
+            <option value="wrong">Use a public container registry</option>
+            <option value="wrong">Use a private container registry</option>
+            <option value="wrong">Azure Container Registry</option>
+            <option value="wrong">Monitor and scan container images</option>
+            <option value="correct">Protect credentials</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+
+    <br />
+    <br />
+
+    <a href="Q20.html">Previous Question</a>
+    <a href="Q22.html">Next Question</a>
+
+
+
+</body>
+</html>

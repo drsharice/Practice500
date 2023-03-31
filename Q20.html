@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q20</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+        body {
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+   
+    <p>
+        Azure serverless compute
+    </p>
+    <p>Choose the appropriate container</p>
+    <p>
+        1. Elastically provision pods inside container instances that start in seconds without the need to manage additional compute resources.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="correct">Serverless Kubernetes</option>
+            <option value="wrong">Serverless functions</option>
+            <option value="wrong">Serverless application environments</option>
+
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. Execute code--written in the language of your choice--with Azure Functions, an event-driven compute experience.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="correct">Serverless Kubernetes</option>
+            <option value="wrong">Serverless functions</option>
+            <option value="wrong">Serverless application environments</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        3. Run and scale web, mobile, and API applications on the platform of your choice--in a high-productivity, fully managed environment--with Azure App Service.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Serverless Kubernetes</option>
+            <option value="correct">Serverless functions</option>
+            <option value="wrong">Serverless application environments</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <br />
+
+    <a href="Q19.html">Previous Question</a>
+    <a href="Q21.html">Next Question</a>
+
+</body>
+</html>
