@@ -8,11 +8,15 @@
             font-size: 20px;
             font-family: "Georgia";
         }
+
+        body {
+            background-color: lightcyan;
+        }
     </style>
 </head>
 <body>
     <p>
-       You onboard Microsoft Sentinel (formerly, Azure Sentinel) for your organization's Azure Active Directory (Azure AD) tenant. Your security team provides you a list of different events for which they want to be able to create alerts and playbooks.
+        You onboard Microsoft Sentinel (formerly, Azure Sentinel) for your organization's Azure Active Directory (Azure AD) tenant. Your security team provides you a list of different events for which they want to be able to create alerts and playbooks.
     </p>
     <p>
         You need to identify which data sources to enable for each of the requirements provided by your security team.
@@ -31,46 +35,49 @@
 
         <span class="output"></span>
         <button onclick="getOption()"> Check answer </button>
-        <script type="text/javascript">function getOption() {
+        <script type="text/javascript">
+    function getOption() {
                 selectElement = document.querySelector('#select1');
                 output = selectElement.value;
                 document.querySelector('.output').textContent = output;
             }</script>
-       
+
     </p>
     <p>
         Notify the security team when someone invokes a conditional access policy. <select id="select2">
-    <option value=""></option>
-    <option value="wrong">Azure Activity</option>
-    <option value="correct">Azure Active Directory</option>
-    <option value="wrong">Azure Web Application Firewall</option>
-    <option value="wrong">Azure Activity</option>
-    <option value="wrong">Azure DDoS Protection</option>
-</select>
+            <option value=""></option>
+            <option value="wrong">Azure Activity</option>
+            <option value="correct">Azure Active Directory</option>
+            <option value="wrong">Azure Web Application Firewall</option>
+            <option value="wrong">Azure Activity</option>
+            <option value="wrong">Azure DDoS Protection</option>
+        </select>
 
         <span class="output1"></span>
         <button onclick="getOption2()"> Check answer </button>
 
-        <script type="text/javascript">function getOption2() {
+        <script type="text/javascript">
+    function getOption2() {
                 selectElement = document.querySelector('#select2');
                 output = selectElement.value;
                 document.querySelector('.output1').textContent = output;
             }</script>
-        
+
     </p>
     <p>
         Create an alert when there is a SQL Injection attempt on your web application <select id="select3">
-    <option value=""></option>
-    <option value="wrong">Azure Activity</option>
-    <option value="wrong">Azure Active Directory</option>
-    <option value="correct">Azure Web Application Firewall</option>
-    <option value="wrong">Azure Activity</option>
-    <option value="wrong">Azure DDoS Protection</option>
-</select>
+            <option value=""></option>
+            <option value="wrong">Azure Activity</option>
+            <option value="wrong">Azure Active Directory</option>
+            <option value="correct">Azure Web Application Firewall</option>
+            <option value="wrong">Azure Activity</option>
+            <option value="wrong">Azure DDoS Protection</option>
+        </select>
         <span class="output3"></span>
         <button onclick="getOption3()"> Check answer </button>
 
-        <script type="text/javascript">function getOption3() {
+        <script type="text/javascript">
+    function getOption3() {
                 selectElement = document.querySelector('#select3');
                 output = selectElement.value;
                 document.querySelector('.output3').textContent = output;
@@ -89,13 +96,17 @@
         <span class="output4"></span>
         <button onclick="getOption4()"> Check answer </button>
 
-        <script type="text/javascript">function getOption4() {
+        <script type="text/javascript">
+    function getOption4() {
                 selectElement = document.querySelector('#select4');
                 output = selectElement.value;
                 document.querySelector('.output4').textContent = output;
             }</script>
         -Name 'LogAnalyticsExtLinux' -PolicyDefinition $policy -Scope $rg.ResourceId
     </p>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
     <a href="Q16.html">Previous Question</a>
     <a href="Q18.html">Next Question</a>
 </body>

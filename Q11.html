@@ -8,19 +8,23 @@
             font-size: 20px;
             font-family: "Georgia";
         }
+
+        body {
+            background-color: honeydew;
+        }
     </style>
 </head>
 <body>
     <p>
-       You are an Azure resource tenant administrator in a resources / accounts Azure Active Directory multi-tenant architecture.
+        You are an Azure resource tenant administrator in a resources / accounts Azure Active Directory multi-tenant architecture.
     </p>
     <p>
         You need to provide users with accounts residing in the accounts Azure AD tenant access to your organization's resources Azure AD tenant.
     </p>
     <p>
-       Which three actions should you perform in sequence?
+        Which three actions should you perform in sequence?
     </p>
-  
+
     <p>
         1.
         <select id="select1">
@@ -31,12 +35,13 @@
             <option value="wrong">Ensure that the accounts Azure AD users accept the invitation</option>
             <option value="wrong">Choose an email one time passcode for authentication</option>
             <option value="wrong">Choose an Azure AD identity provider for authentication</option>
-          
+
         </select>
 
         <span class="output"></span>
         <button onclick="getOption()"> Check answer </button>
-        <script type="text/javascript">function getOption() {
+        <script type="text/javascript">
+    function getOption() {
                 selectElement = document.querySelector('#select1');
                 output = selectElement.value;
                 document.querySelector('.output').textContent = output;
@@ -61,7 +66,8 @@
     </p>
     <button onclick="getOption2()"> Check answer </button>
 
-    <script type="text/javascript">function getOption2() {
+    <script type="text/javascript">
+    function getOption2() {
             selectElement = document.querySelector('#select2');
             output = selectElement.value;
             document.querySelector('.output1').textContent = output;
@@ -87,12 +93,14 @@
     </p>
     <button onclick="getOption3()"> Check answer </button>
 
-    <script type="text/javascript">function getOption3() {
+    <script type="text/javascript">
+    function getOption3() {
             selectElement = document.querySelector('#select3');
             output = selectElement.value;
             document.querySelector('.output3').textContent = output;
         }</script>
     <br />
+    <a href="index.html">Home</a>
     <br />
 
     <a href="Q10.html">Previous Question</a>

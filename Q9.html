@@ -8,6 +8,10 @@
             font-size: 20px;
             font-family: "Georgia";
         }
+
+        body {
+            background-color: tan;
+        }
     </style>
 </head>
 <body>
@@ -35,7 +39,7 @@
         <span class="output"></span>
         <button onclick="getOption()"> Check answer </button>
         <script type="text/javascript">
-    function getOption() {
+            function getOption() {
                 selectElement = document.querySelector('#select1');
                 output = selectElement.value;
                 document.querySelector('.output').textContent = output;
@@ -51,13 +55,13 @@
         </select>
     </P>
     <p>
-        
+
         <span class="output1"></span>
     </p>
     <button onclick="getOption2()"> Check answer </button>
 
     <script type="text/javascript">
-    function getOption2() {
+        function getOption2() {
             selectElement = document.querySelector('#select2');
             output = selectElement.value;
             document.querySelector('.output1').textContent = output;
@@ -74,18 +78,19 @@
         </select>
     </P>
     <p>
- 
+
         <span class="output3"></span>
     </p>
     <button onclick="getOption3()"> Check answer </button>
 
     <script type="text/javascript">
-    function getOption3() {
+        function getOption3() {
             selectElement = document.querySelector('#select3');
             output = selectElement.value;
             document.querySelector('.output3').textContent = output;
         }</script>
     <br />
+    <a href="index.html">Home</a>
     <br />
 
     <a href="Q8.html">Previous Question</a>

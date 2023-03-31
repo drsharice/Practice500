@@ -8,12 +8,16 @@
             font-size: 20px;
             font-family: "Georgia";
         }
+
+        body {
+            background-color: lightsteelblue;
+        }
     </style>
 </head>
 <body>
     <h2>Task Create a key vault</h2>
     <p>
-       
+
         Which five actions should you perform, in what sequence?
     </p>
 
@@ -30,7 +34,8 @@
 
         <span class="output"></span>
         <button onclick="getOption()"> Check answer </button>
-        <script type="text/javascript">function getOption() {
+        <script type="text/javascript">
+    function getOption() {
                 selectElement = document.querySelector('#select1');
                 output = selectElement.value;
                 document.querySelector('.output').textContent = output;
@@ -50,55 +55,58 @@
         <span class="output1"></span>
         <button onclick="getOption2()"> Check answer </button>
 
-        <script type="text/javascript">function getOption2() {
-            selectElement = document.querySelector('#select2');
-            output = selectElement.value;
-            document.querySelector('.output1').textContent = output;
-        }</script>
+        <script type="text/javascript">
+    function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
     </P>
 
     <P>
         3. On the <b>Basics</b> tab, fill out the required information
-                  <select id="select3">
-                      <option value=""></option>
-                      <option value="wrong"><b>Key Vaults</b></option>
-                      <option value="correct"><b>Pricing tier, Soft delete and Retention period</b></option>
-                      <option value="wrong"><b>Create</b></option>
-                      <option value="wrong">Wait for the new key vault to bec created, or move to a key vault that has already been created</option>
-                      <option value="wrong"><b>+ Create</b></option>
-                  </select>
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong"><b>Key Vaults</b></option>
+            <option value="correct"><b>Pricing tier, Soft delete and Retention period</b></option>
+            <option value="wrong"><b>Create</b></option>
+            <option value="wrong">Wait for the new key vault to bec created, or move to a key vault that has already been created</option>
+            <option value="wrong"><b>+ Create</b></option>
+        </select>
 
         <span class="output3"></span>
 
         <button onclick="getOption3()"> Check answer </button>
 
-        <script type="text/javascript">function getOption3() {
-            selectElement = document.querySelector('#select3');
-            output = selectElement.value;
-            document.querySelector('.output3').textContent = output;
-        }</script>
+        <script type="text/javascript">
+    function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
     </P>
 
     <P>
-        4.Click <b>Review and Create</b>and then 
-                <select id="select4">
-                    <option value=""></option>
-                    <option value="wrong"><b>Key Vaults</b></option>
-                    <option value="wrong"><b>Pricing tier, Soft delete and Retention period</b></option>
-                    <option value="correct"><b>Create</b></option>
-                    <option value="wrong">Wait for the new key vault to bec created, or move to a key vault that has already been created</option>
-                    <option value="wrong"><b>+ Create</b></option>
-                </select>
+        4.Click <b>Review and Create</b>and then
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong"><b>Key Vaults</b></option>
+            <option value="wrong"><b>Pricing tier, Soft delete and Retention period</b></option>
+            <option value="correct"><b>Create</b></option>
+            <option value="wrong">Wait for the new key vault to bec created, or move to a key vault that has already been created</option>
+            <option value="wrong"><b>+ Create</b></option>
+        </select>
 
         <span class="output4"></span>
 
         <button onclick="getOption4()"> Check answer </button>
 
-        <script type="text/javascript">function getOption4() {
-            selectElement = document.querySelector('#select4');
-            output = selectElement.value;
-            document.querySelector('.output4').textContent = output;
-        }</script>
+        <script type="text/javascript">
+    function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
     </P>
     <P>
         5.And last
@@ -116,13 +124,15 @@
 
         <button onclick="getOption5()"> Check answer </button>
 
-        <script type="text/javascript">function getOption5() {
-            selectElement = document.querySelector('#select5');
-            output = selectElement.value;
-            document.querySelector('.output5').textContent = output;
-        }</script>
+        <script type="text/javascript">
+    function getOption5() {
+                selectElement = document.querySelector('#select5');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
     </P>
     <br />
+    <a href="index.html">Home</a>
     <br />
 
     <a href="Q15.html">Previous Question</a>
