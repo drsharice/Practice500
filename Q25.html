@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q25</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modify Group Ownership</h1>
+
+    <p>
+        1.From the menu on the left, select
+        <select id="select1">
+            <option value=""></option>
+            <option value="correct"><b>Owners</b></option>
+            <option value="wrong"><b>Groups</b></option>
+            <option value="wrong"><b>Add Owners</b></option>
+            <option value="wrong">Select button</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <p>2.Verify that there is already a user assigned as the owner for the group: the user account that you are signed in with and which created the Microsoft 365 group in the first place.</p>
+    <P>
+        3.Using the breadcrumb trail at the top, select____ to return to the All groups view.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong"><b>Owners</b></option>
+            <option value="correct"><b>Groups</b></option>
+            <option value="wrong"><b>Add Owners</b></option>
+            <option value="wrong">Select button</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+    <p>4. In the list of groups, click on the name of the Security group you created.</p>
+    <P>
+        5. From the menu on the left, select _____. Notice that, for this group, there are currently no owners assigned.
+        <select id="select3">
+            <option value=""></option>
+            <option value="correct"><b>Owners</b></option>
+            <option value="wrong"><b>Groups</b></option>
+            <option value="wrong"><b>Add Owners</b></option>
+            <option value="wrong">Select button</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        6.From the menu at the top, click ____.
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong"><b>Owners</b></option>
+            <option value="wrong"><b>Groups</b></option>
+            <option value="correct"><b>Add Owners</b></option>
+            <option value="wrong">Select button</option>
+        </select>
+
+        <span class="output4"></span>
+
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </P>
+    <P>
+        7.In the Add owners pane that displays on the right, select your user account from the search list and click the
+        <select id="select5">
+            <option value=""></option>
+            <option value="wrong"><b>Owners</b></option>
+            <option value="wrong"><b>Groups</b></option>
+            <option value="wrong"><b>Add Owners</b></option>
+            <option value="correct">Select button</option>
+        </select>
+
+        <span class="output5"></span>
+
+        <button onclick="getOption5()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption5() {
+                selectElement = document.querySelector('#select5');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
+    </P>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q24.html">Previous Question</a>
+    <a href="Q26.html">Next Question</a>
+
+</body>
+</html>

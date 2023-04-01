@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q23</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color:tan;
+        }
+    </style>
+</head>
+<body>
+    <h1> Create Azure AD User Accounts </h1>
+   
+    <p>
+      1. In the Azure portal, click the hamburger icon at the top-left of the screen to open the menu.
+
+    <p>
+        2. From the menu, select
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Azure Active Directory</option>
+            <option value="correct">Users</option>
+            <option value="wrong">New user</option>
+
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+            function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+      3. From the menu on the left, select
+        <select id="select2">
+             <option value=""></option>
+            <option value="correct">Azure Active Directory</option>
+            <option value="wrong">Users</option>
+            <option value="wrong">New user</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>From the menu at the top, click ________ click on <b>Create new user</b>
+        Monitor when a user is assigned with the owner permission in a resource group
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Azure Active Directory</option>
+            <option value="wrong">Users</option>
+            <option value="correct">New user</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q22.html">Previous Question</a>
+    <a href="Q24.html">Next Question</a>
+
+</body>
+</html>

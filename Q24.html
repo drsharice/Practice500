@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q24</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: ivory;
+        }
+    </style>
+</head>
+<body>
+    <p>
+       <h1>Create ASecurity Group</h1>
+    </p> 
+    <p>
+        1. In the Azure portal, click the hamburger icon at the top-left of the screen to open the menu.
+    </p>
+   
+    <p>
+        2.From the menu, select
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Groups</option>
+            <option value="wrong">New Group</option>
+            <option value="wrong">Security</option>
+            <option value="correct">Azure Active Directory</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        3.From the menu on the left, select
+        <select id="select2">
+            <option value=""></option>
+            <option value="correct">Groups</option>
+            <option value="wrong">New Group</option>
+            <option value="wrong">Security</option>
+            <option value="wrong">Azure Active Directory</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        4.From the menu at the top, click
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Groups</option>
+            <option value="correct">New Group</option>
+            <option value="wrong">Security</option>
+            <option value="wrong">Azure Active Directory</option>
+
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        5.From the Group type drop-down, select
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong">Groups</option>
+            <option value="wrong">New Group</option>
+            <option value="correct">Security</option>
+            <option value="wrong">Azure Active Directory</option>
+
+        </select>
+
+        <span class="output4"></span>
+
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </P>
+  
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q23.html">Previous Question</a>
+    <a href="Q25.html">Next Question</a>
+
+</body>
+</html>
