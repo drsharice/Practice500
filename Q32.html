@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q32</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        <h1>Azure Key Vault Authentication Option for Apps</h1>
+
+    </p>
+    <p>Which Options runs as a daemon service or background job.</p>
+
+
+    <select id="select1">
+        <option value=""></option>
+        <option value="correct">Application-only access</option>
+        <option value="wrong">User-only access</option>
+        <option value="wrong">User plus application acess</option>
+        <option value="Wrong">Storage Account</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        User accesses the Key Vault from any app registered in the tenant.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Application-only access</option>
+            <option value="correct">User-only access</option>
+            <option value="wrong">User plus application acess</option>
+            <option value="Wrong">Storage Account</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+    <P>
+        3. Application accesses Key Vault on behalf of a signed-in user
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Application-only access</option>
+            <option value="wrong">User-only access</option>
+            <option value="correct">User plus application acess</option>
+            <option value="wrong">Storage Account</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q31.html">Previous Question</a>
+    <a href="Q33.html">Next Question</a>
+
+
+
+</body>
+</html>

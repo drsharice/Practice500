@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q26</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <p><h1>Azure SQL Database Auditing</h1></p>
+    <h2>You can use database auditing in Azure SQL to:</h2>
+
+    <p>
+        1. Which masking function, is full masking according to the data types of the designated fields?
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong"><b>Random number</b></option>
+            <option value="correct"><b>Default</b></option>
+            <option value="wrong"><b>Custom text</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. Which masking method, generates a random number according to the selected boundaries and actual data types. 
+        If the designated boundaries are equal, then the masking function is aconstant number.
+        <select id="select2">
+            <option value=""></option>
+            <option value="correct"><b>Random number</b></option>
+            <option value="wrong"><b>Default</b></option>
+            <option value="wrong"><b>Custom text</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        3. Which masking method, which exposes the first and last characters and adds acustom padding string in the middle.
+        If the original string is shorter than the exposed prefix, and suffix, only the padding string is used prefix[padding]suffix.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong"><b>Random number</b></option>
+            <option value="wrong"><b>Default</b></option>
+            <option value="correct"><b>Custom text</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q28.html">Previous Question</a>
+    <a href="Q30.html">Next Question</a>
+
+</body>
+</html>

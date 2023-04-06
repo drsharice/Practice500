@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q26</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: linen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Protecting Data at Rest</h1>
+    <h2>How you configure encryption data at rest depends on the service you are configuring</h2>
+
+    <p>
+        1. What disk encryption depends on the OS platform, with BitLocker (Windows) or dm-crypt(Linux)
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong"><b>Azure Storage</b></option>
+            <option value="correct"><b>Azure VM</b></option>
+            <option value="wrong"><b>key vaults</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. What provides secure storage of secrets (like connection strings) and can be access-limited to managed identities.
+        <select id="select2">
+            <option value=""></option>
+            <option value="correct"><b>Azure Storage</b></option>
+            <option value="wrong"><b>Azure VM</b></option>
+            <option value="wrong"><b>key vaults</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q27.html">Previous Question</a>
+    <a href="Q29.html">Next Question</a>
+
+</body>
+</html>

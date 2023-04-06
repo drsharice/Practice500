@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q33</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: mistyrose;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        <h1>Secrets and Keys: What's the Difference</h1>
+
+    </p>
+
+
+   Provide a way to lock down access to PaaS service to a VNet
+    <select id="select1">
+        <option value=""></option>
+        <option value="correct">Service Endpoints</option>
+        <option value="wrong">Private Endpoints</option>
+        <option value="wrong">Secrets</option>
+        <option value="wrong">Keys</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        Grant access to a specific PaaS resource in your VNet on a private IP address
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Service Endpoints</option>
+            <option value="correct">Private Endpoints</option>
+            <option value="wrong">Secrets</option>
+            <option value="wrong">Keys</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q33.html">Previous Question</a>
+    <a href="Q35.html">Next Question</a>
+
+
+
+</body>
+</html>

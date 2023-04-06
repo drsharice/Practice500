@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q31</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+   
+    <p>
+        <h1>Key Vault RBAC Effective Access</h1>
+        
+    </p>
+    <p>Which access to all key vaults within a specific resource group </p>
+
+  
+    <select id="select1">
+        <option value=""></option>
+        <option value="correct">Resource Group</option>
+        <option value="wrong">Resource</option>
+        <option value="wrong">Credit</option>
+        <option value="Wrong">Storage Account</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        Access to a specific key vault instance
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Resource Group</option>
+            <option value="correct">Resource</option>
+            <option value="wrong">Credit</option>
+            <option value="Wrong">Storage Account</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q30.html">Previous Question</a>
+    <a href="Q32.html">Next Question</a>
+
+
+
+</body>
+</html>

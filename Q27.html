@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q26</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+   
+    <p>
+        1. _____ let Function apps access resources without requiring specific access keys or connection strings.
+        <select id="select1">
+            <option value=""></option>
+            <option value="correct"><b>managed identities</b></option>
+            <option value="wrong"><b>application security group</b></option>
+            <option value="wrong"><b>key vaults</b></option>
+            <option value="wrong">Create</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. What provides secure storage of secrets (like connection strings) and can be access-limited to managed identities.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong"><b>managed identities</b></option>
+            <option value="wrong"><b>application security group</b></option>
+            <option value="correct"><b>key vaults</b></option>
+            <option value="wrong">Secure Blob storage</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        3. For sensitive data storage, add multifactor authentication and data encryption in transit and at rest,
+        grant limited access to Azure Storage resources using SAS tokens.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong"><b>managed identities</b></option>
+            <option value="wrong"><b>application security group</b></option>
+            <option value="wrong"><b>key vaults</b></option>
+            <option value="correct">Secure Blob storage</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q25.html">Previous Question</a>
+    <a href="Q27.html">Next Question</a>
+
+</body>
+</html>
