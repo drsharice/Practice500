@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AZ-500 Security Question 37</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+    <p>
+       Types of shared access signatures
+    </p>
+
+    
+
+        <br />
+      shared access signature to allow access to specific resources in a storage account. You'd use this type of shared access signature, for example, to allow an app to retrieve a list of files in a file system or to download a file.
+        <select id="select1">
+            <option value="no data"></option>
+            <option value="correct">service-level</option>
+            <option value="wrong">user delegation - SAS</option>
+            <option value="wrong">account-level</option>
+        </select>
+    </P>
+    <p>
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <P>
+        <br />
+       shared access signature to allow access to anything that a service-level shared access signature can allow, plus additional resources and abilities. For example, you can use an account-level shared access signature to allow the ability to create file systems.)
+        <select id="select2">
+            <option value="no data"></option>
+            <option value="wrong">service-level</option>
+            <option value="wrong">user delegation - SAS</option>
+            <option value="correct">account-level</option>
+        </select>
+    </P>
+    <p>
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+    <P>
+        <br />
+       introduced with version 2018-11-09. A user delegation SAS is secured with Azure AD credentials. This type of SAS is supported for the Blob service only and can be used to grant access to containers and blobs.
+        <select id="select3">
+             <option value="no data"></option>
+            <option value="wrong">service-level</option>
+            <option value="correct">user delegation - SAS</option>
+            <option value="wrong">account-level</option>
+        </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q36.html">Pevious Question</a>
+    <a href="Q38.html">Next Question</a>
+
+</body>
+</html>
