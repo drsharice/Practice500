@@ -16,35 +16,18 @@
 </head>
 <body>
     <p>
-        You manage an Azure account with a subscription named Sub1 for your company. Sub1
-        has three Azure virtual machines(VMs) named SERVER01, SERVER02 and SERVER03.
+       Azure Arc capabilities
     </p>
+  
     <p>
-        SERVER01 and SERVER02 are used by the sales team, and SERVER02 is used by the development team.
-        All servers are in a resource group named RG1 in Sub1
-    </p>
-    <p>
-        The development team regularly makes changes to SERVER03 including adding memory
-        and additional storage. They also need the ability to create new VMs in the future.
-    </p>
-    <p>
-        You need to limit access to the development team and perform the necessary tasks using the least privilege
-        model. They also need the ability to create new VMs in the future.
-    </p>
-    <p>
-        Which three actions should you perform
-    </p>
-    <p>
-        1.
+        1.Manage Windows and Linux physical servers and virtual machines hosted outside of Azure.
         <select id="select1">
             <option value=""></option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
-            <option value="wrong">Create a new subscription named Sub2</option>
-            <option value="wrong">Move SERVER03 to Sub2</option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
-            <option value="correct">Create a new resource group named RG2.</option>
-            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
-            <option value="wrong">Move SERVER03 to RG2</option>
+            <option value="wrong">Azure data services</option>
+            <option value="correct">servers</option>
+            <option value="wrong">Kubernetes cluster</option>
+            <option value="wrong">SQL Server</option>
+            <option value="wrong">Virtual Machine (preview)</option>
         </select>
 
         <span class="output"></span>
@@ -57,16 +40,14 @@
             }</script>
     </p>
     <P>
-        2.
+        2.Attach and configure Kubernetes clusters running anywhere with multiple supported distributions.
         <select id="select2">
             <option value=""></option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
-            <option value="wrong">Create a new subscription named Sub2</option>
-            <option value="wrong">Move SERVER03 to Sub2</option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
-            <option value="correct">Create a new resource group named RG2.</option>
-            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
-            <option value="wrong">Move SERVER03 to RG2</option>
+            <option value="wrong">Azure data services</option>
+            <option value="wrong">servers</option>
+            <option value="correct">Kubernetes cluster</option>
+            <option value="wrong">SQL Server</option>
+            <option value="wrong">Virtual Machine (preview)</option>
         </select>
     </P>
     <p>
@@ -84,16 +65,14 @@
 
 
     <P>
-        3.
+        3.Run Azure data services on-premises, at the edge, and in public clouds using Kubernetes and the infrastructure of your choice. SQL Managed Instance and PostgreSQL server (preview) services are currently available.
         <select id="select3">
-            <option value=""></option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub1</option>
-            <option value="wrong">Create a new subscription named Sub2</option>
-            <option value="wrong">Move SERVER03 to Sub2</option>
-            <option value="wrong">Assign the development team the Virtual Machine Contributor role scoped to Sub2</option>
-            <option value="wrong">Create a new resource group named RG2.</option>
-            <option value="wrong">Assign the development team Contributor role scoped to RG2</option>
-            <option value="correct">Move SERVER03 to RG2</option>
+             <option value=""></option>
+            <option value="correct">Azure data services</option>
+            <option value="wrong">servers</option>
+            <option value="wrong">Kubernetes cluster</option>
+            <option value="wrong">SQL Server</option>
+            <option value="wrong">Virtual Machine (preview)</option>
         </select>
     </P>
     <p>
@@ -107,6 +86,55 @@
             selectElement = document.querySelector('#select3');
             output = selectElement.value;
             document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    
+     <P>
+        4.Extend Azure services to SQL Server instances hosted outside of Azure.
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong">Azure data services</option>
+            <option value="wrong">servers</option>
+            <option value="wrong">Kubernetes cluster</option>
+            <option value="correct">SQL Server</option>
+            <option value="wrong">Virtual Machine (preview)</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output4"></span>
+    </p>
+    <button onclick="getOption4()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption4() {
+            selectElement = document.querySelector('#select4');
+            output = selectElement.value;
+            document.querySelector('.output4').textContent = output;
+        }</script>
+    <br />
+     <P>
+        5.Provision, resize, delete, and manage virtual machines based on VMware vSphere or Azure Stack hyper-converged infrastructure (HCI) and enable VM self-service through role-based access.
+        <select id="select5">
+             <option value=""></option>
+            <option value="wrong">Azure data services</option>
+            <option value="wrong">servers</option>
+            <option value="wrong">Kubernetes cluster</option>
+            <option value="wrong">SQL Server</option>
+            <option value="correct">Virtual Machine (preview)</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output5"></span>
+    </p>
+    <button onclick="getOption5()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select5');
+            output = selectElement.value;
+            document.querySelector('.output5').textContent = output;
         }</script>
     <br />
     <a href="index.html">Home</a>
