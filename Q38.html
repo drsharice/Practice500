@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q2</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+What are the benefits of Microsoft Defender for SQL?
+    </p>
+    <p>Microsoft Defender for SQL provides a set of advanced SQL security capabilities, including SQL Vulnerability Assessment and Advanced Threat Protection. </p>
+
+    <br />
+   is an easy-to-configure service that can discover, track, and help you remediate potential database vulnerabilities. It provides visibility into your security state, and it includes actionable steps to resolve security issues and enhance your database fortifications.
+    <select id="select1">
+        <option value=""></option>
+        <option value="correct">Vulnerability Assessment</option>
+      <option value="wrong">Advanced Threat Protection</option>
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+       detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activities, and it provides immediate security alerts on potential vulnerabilities, Azure SQL injection attacks, and anomalous database access patterns. Advanced Threat Protection alerts provide details of suspicious activity and recommend action on how to investigate and mitigate the threat.
+        <select id="select2">
+            <option value=""></option>
+        <option value="correct">Vulnerability Assessment</option>
+      <option value="wrong">Advanced Threat Protection</option>
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q37.html">Previous Question</a>
+    <a href="Q39.html">Next Question</a>
+
+
+
+</body>
+</html>
