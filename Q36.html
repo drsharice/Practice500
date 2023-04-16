@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q36</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+  
+    
+    <p>
+
+        Configure Microsoft Graph permissions
+    </p>
+    <p>Microsoft Graph has two types of permissions:</p>
+
+    <br />
+    Upload Images
+    <select id="select1">
+        <option value=""></option>
+        <option value="correct">Delgatated permissions</option>
+        <option value="wrong">Application permissions</option>
+       
+    </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <p>
+        <br />
+        Download images
+        <select id="select2">
+            <option value=""></option>
+        <option value="wrong">Delgatated permissions</option>
+        <option value="correct">Application permissions</option>
+       
+        </select>
+    </p>
+    <p>
+        The value of the option selected is:
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q35.html">Previous Question</a>
+    <a href="Q37.html">Next Question</a>
+
+
+
+</body>
+</html>
