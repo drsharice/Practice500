@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AZ-500 Security Question 35</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+    <p>
+       Register an application with App Registration
+    </p>
+
+    <p>
+      For the most secure operation, register your app with the Microsoft identity platform.
+
+    </p>
+    <p>Before your app can get a token from the Microsoft identity platform, it must be registered in the Azure portal. Registration integrates your app with the Microsoft identity platform and establishes the information that it uses to get tokens, including:</p>
+   
+    <P>
+
+        <br />
+       A unique identifier assigned by the Microsoft identity platform.
+        <select id="select1">
+            <option value="no data"></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="correct">Application ID</option>
+            <option value="wrong">Redirect URI/URL</option>
+            <option value="wrong">Application Secret</option>
+        </select>
+    </P>
+    <p>
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <P>
+        <br />
+       One or more endpoints at which your app will receive responses from the Microsoft identity platform. (For native and mobile apps, this is a URI assigned by the Microsoft identity platform.)
+        <select id="select2">
+           <option value="no data"></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="wrong">Application ID</option>
+            <option value="wrong">Redirect URI/URL</option>
+            <option value="correct">Application Secret</option>
+        </select>
+    </P>
+    <p>
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+    <P>
+        <br />
+       A password or a public/private key pair that your app uses to authenticate with the Microsoft identity platform. (Not needed for native or mobile apps.)
+        <select id="select3">
+               <option value="no data"></option>
+            <option value="wrong">Azure Firewall</option>
+            <option value="wrong">Application Gateway</option>
+            <option value="wrong">Application ID</option>
+            <option value="wrong">Redirect URI/URL</option>
+            <option value="correct">Application Secret</option>
+        </select>
+    </P>
+    <p>
+        The value of the option selected is:
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q34.html">Pevious Question</a>
+    <a href="Q36.html">Next Question</a>
+
+</body>
+  </html>
