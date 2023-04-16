@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q39</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: ivory;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Implement Platform Protection
+    </p>
+    
+    <p>
+        1. works on an approval call flow model wherein the Private Link service consumer can request a connection to the service provider for consuming the service.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Express Route</option>
+            <option value="wrong">Express Route Direct</option>
+            <option value="wrong">Azure Front Door</option>
+            <option value="wrong">Web Application Firewall (WAF)</option>
+            <option value="wrong">Azure Application Gateway</option>
+            <option value="correct">Azure Private Link</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+            function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on the source IP address and port to a destination IP address and port.
+        <select id="select2">
+              <option value=""></option>
+            <option value="wrong">Express Route</option>
+            <option value="wrong">Express Route Direct</option>
+            <option value="wrong">Azure Front Door</option>
+            <option value="wrong">Web Application Firewall (WAF)</option>
+            <option value="correct">Azure Application Gateway</option>
+            <option value="wrong">Azure Private Link</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        3.provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
+        <select id="select3">
+             <option value=""></option>
+            <option value="wrong">Express Route</option>
+            <option value="wrong">Express Route Direct</option>
+            <option value="wrong">Azure Front Door</option>
+            <option value="correct">Web Application Firewall (WAF)</option>
+            <option value="wrong">Azure Application Gateway</option>
+            <option value="wrong">Azure Private Link</option>
+
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        4.enables you to define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. 
+        <select id="select4">
+             <option value=""></option>
+            <option value="wrong">Express Route</option>
+            <option value="wrong">Express Route Direct</option>
+            <option value="correct">Azure Front Door</option>
+            <option value="wrong">Web Application Firewall (WAF)</option>
+            <option value="wrong">Azure Application Gateway</option>
+            <option value="wrong">Azure Private Link</option>
+
+        </select>
+
+        <span class="output4"></span>
+
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </P>
+    <P>
+        5. is a direct, private connection from your WAN (not over the public Internet) to Microsoft Services, including Azure. Site-to-Site VPN traffic travels encrypted over the public Internet. Being able to configure Site-to-Site VPN and ExpressRoute connections for the same virtual network has several advantages.
+
+        <select id="select5">
+              <option value=""></option>
+            <option value="correct">Express Route</option>
+            <option value="wrong">Express Route Direct</option>
+            <option value="wrong">Azure Front Door</option>
+            <option value="wrong">Web Application Firewall (WAF)</option>
+            <option value="wrong">Azure Application Gateway</option>
+            <option value="wrong">Azure Private Link</option>
+        </select>
+
+        <span class="output5"></span>
+
+        <button onclick="getOption5()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption5() {
+                selectElement = document.querySelector('#select5');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
+    </P>
+  <P>
+        6. gives you the ability to connect directly into Microsoft’s global network at peering locations strategically distributed across the world. ExpressRoute Direct provides dual 100 Gbps or 10 Gbps connectivity, which supports Active/Active connectivity at scale
+
+        <select id="select6">
+              <option value=""></option>
+            <option value="wrong">Express Route</option>
+            <option value="correct">Express Route Direct</option>
+            <option value="wrong">Azure Front Door</option>
+            <option value="wrong">Web Application Firewall (WAF)</option>
+            <option value="wrong">Azure Application Gateway</option>
+            <option value="wrong">Azure Private Link</option>
+        </select>
+
+        <span class="output6"></span>
+
+        <button onclick="getOption6()"> Check answer </button>
+
+        <script type="text/javascript">
+            function getOption5() {
+                selectElement = document.querySelector('#select6');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
+    </P>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+  <a href="Q38.html">Previous Question</a>
+
+</body>
+</html>
