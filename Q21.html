@@ -19,19 +19,16 @@
     </style>
 </head>
 <body>
-    <p>Serveless Kubernetes</p>
-    <p>Choose the correct security recommendations for Azure Container Instances:</p>
+    <p>Configure properties for diagnostic logging</p>
+    <p>Azure Monitor diagnostic logs are logs produced by an Azure service that provide rich, frequently collected data about the operation of that service. Azure Monitor makes two types of diagnostic logs available:</p>
 
     <p>
 
-        Azure Container Registry can be configured to require authentication (often with a service principal)
+      These logs come from tenant-level services that exist outside an Azure subscription, such as Azure Active Directory (Azure AD).
         <select id="select1">
             <option value=""></option>
-            <option value="wrong">Use a public container registry</option>
-            <option value="correct">Use a private container registry</option>
-            <option value="wrong">Azure Container Registry</option>
-            <option value="wrong">Monitor and scan container images</option>
-            <option value="wrong">Protect credentials</option>
+            <option value="wrong">Tenant Logs</option>
+            <option value="correct">Resource logs</option>
         </select>
     </p>
     <p>
@@ -47,14 +44,11 @@
             document.querySelector('.output').textContent = output;
         }</script>
     <p>
-        Azure Container Registry integrates with Azure Security Center to automatically scan images pushed to a registry
+       These logs come from Azure services that deploy resources within an Azure subscription, such as Network Security Groups (NSGs) or storage accounts.
         <select id="select2">
-            <option value=""></option>
-            <option value="wrong">Use a public container registry</option>
-            <option value="correct">Use a private container registry</option>
-            <option value="wrong">Azure Container Registry</option>
-            <option value="wrong">Monitor and scan container images</option>
-            <option value="wrong">Protect credentials</option>
+           <option value=""></option>
+            <option value="wrong">Tenant Logs</option>
+            <option value="correct">Resource logs</option>
         </select>
     </p>
     <p>
@@ -70,30 +64,7 @@
             document.querySelector('.output1').textContent = output;
         }</script>
 
-    <P>
-        3. Azure Key Vault is a cloud service that safeguards encryption keys and secrets
-        (such as certificates, connection strings, and passwords) for containerized applications.
-        <select id="select3">
-            <option value="wrong">Use a public container registry</option>
-            <option value="wrong">Use a private container registry</option>
-            <option value="wrong">Azure Container Registry</option>
-            <option value="wrong">Monitor and scan container images</option>
-            <option value="correct">Protect credentials</option>
-        </select>
-
-        <span class="output3"></span>
-
-        <button onclick="getOption3()"> Check answer </button>
-
-        <script type="text/javascript">
-            function getOption3() {
-                selectElement = document.querySelector('#select3');
-                output = selectElement.value;
-                document.querySelector('.output3').textContent = output;
-            }</script>
-    </P>
-
-
+   
     <br />
     <a href="index.html">Home</a>
     <br />
