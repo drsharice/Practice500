@@ -15,18 +15,16 @@
     </style>
 </head>
 <body>
-    <h1> Create Azure AD User Accounts </h1>
+    <h1>Configure Key Vault access</h1>
+    <p>Access to a key vault is controlled through two interfaces: </p>
    
-    <p>
-      1. In the Azure portal, click the hamburger icon at the top-left of the screen to open the menu.
-
-    <p>
-        2. From the menu, select
+  <p>
+        1. is where you manage Key Vault itself. Operations in this plane include creating and deleting key vaults, retrieving Key Vault properties, and updating access policies. 
         <select id="select1">
             <option value=""></option>
             <option value="wrong">Azure Active Directory</option>
-            <option value="correct">Users</option>
-            <option value="wrong">New user</option>
+            <option value="correct">Mangement Pane</option>
+            <option value="wrong">Data Pane</option>
 
         </select>
 
@@ -40,12 +38,12 @@
             }</script>
     </p>
     <P>
-      3. From the menu on the left, select
+      2. is where you work with the data stored in a key vault. You can add, delete, and modify keys, secrets, and certificates from here.
         <select id="select2">
              <option value=""></option>
-            <option value="correct">Azure Active Directory</option>
+            <option value="correct">Data Pane</option>
             <option value="wrong">Users</option>
-            <option value="wrong">New user</option>
+            <option value="wrong">Management Pane</option>
         </select>
     </P>
     <p>
@@ -62,27 +60,7 @@
         }</script>
 
 
-    <P>From the menu at the top, click ________ click on <b>Create new user</b>
-        Monitor when a user is assigned with the owner permission in a resource group
-        <select id="select3">
-            <option value=""></option>
-            <option value="wrong">Azure Active Directory</option>
-            <option value="wrong">Users</option>
-            <option value="correct">New user</option>
-        </select>
-    </P>
-    <p>
-
-        <span class="output3"></span>
-    </p>
-    <button onclick="getOption3()"> Check answer </button>
-
-    <script type="text/javascript">
-        function getOption3() {
-            selectElement = document.querySelector('#select3');
-            output = selectElement.value;
-            document.querySelector('.output3').textContent = output;
-        }</script>
+  
     <br />
     <a href="index.html">Home</a>
     <br />
