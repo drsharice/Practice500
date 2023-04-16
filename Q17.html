@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Q5</title>
+    <title>Q17</title>
     <style>
         p {
             font-size: 20px;
@@ -16,21 +16,18 @@
 </head>
 <body>
     <p>
-        You onboard Microsoft Sentinel (formerly, Azure Sentinel) for your organization's Azure Active Directory (Azure AD) tenant. Your security team provides you a list of different events for which they want to be able to create alerts and playbooks.
+        Severity: The severity of the alert after the criteria specified in the alert rule is met. Severity can range from 0 to 4.
     </p>
+   
     <p>
-        You need to identify which data sources to enable for each of the requirements provided by your security team.
-    </p>
-    <p>Which data connector should you use for each requirement? </p>
-    <p>
-        Create an alert when someone deletes a virtual machine
+        Error
         <select id="select1">
             <option value=""></option>
-            <option value="corect">Azure Activity</option>
-            <option value="wrong">Azure Active Directory</option>
-            <option value="wrong">Azure Web Application Firewall</option>
-            <option value="wrong">Azure Activity</option>
-            <option value="wrong">Azure DDoS Protection</option>
+            <option value="correct">Sev1</option>
+            <option value="wrong">Sev2</option>
+            <option value="wrong">Sev0</option>
+            <option value="wrong"Sev3</option>
+            <option value="wrong">Sev4</option>
         </select>
 
         <span class="output"></span>
@@ -44,13 +41,13 @@
 
     </p>
     <p>
-        Notify the security team when someone invokes a conditional access policy. <select id="select2">
-            <option value=""></option>
-            <option value="wrong">Azure Activity</option>
-            <option value="correct">Azure Active Directory</option>
-            <option value="wrong">Azure Web Application Firewall</option>
-            <option value="wrong">Azure Activity</option>
-            <option value="wrong">Azure DDoS Protection</option>
+        Critical <select id="select2">
+              <option value=""></option>
+            <option value="wrong">Sev1</option>
+            <option value="wrong">Sev2</option>
+            <option value="correct">Sev0</option>
+            <option value="wrong"Sev3</option>
+            <option value="wrong">Sev4</option>
         </select>
 
         <span class="output1"></span>
@@ -65,13 +62,13 @@
 
     </p>
     <p>
-        Create an alert when there is a SQL Injection attempt on your web application <select id="select3">
-            <option value=""></option>
-            <option value="wrong">Azure Activity</option>
-            <option value="wrong">Azure Active Directory</option>
-            <option value="correct">Azure Web Application Firewall</option>
-            <option value="wrong">Azure Activity</option>
-            <option value="wrong">Azure DDoS Protection</option>
+        Warning <select id="select3">
+              <option value=""></option>
+            <option value="wrong">Sev1</option>
+            <option value="correct">Sev2</option>
+            <option value="wrong">Sev0</option>
+            <option value="wrong"Sev3</option>
+            <option value="wrong">Sev4</option>
         </select>
         <span class="output3"></span>
         <button onclick="getOption3()"> Check answer </button>
@@ -84,14 +81,14 @@
             }</script>
     </p>
     <p>
-        Create an alert when an owner role is assigned to a user
+        Informational
         <select id="select4">
-            <option value=""></option>
-            <option value="wrong">Azure Activity</option>
-            <option value="wrong">Azure Active Directory</option>
-            <option value="wrong">Azure Web Application Firewall</option>
-            <option value="correct">Azure Activity</option>
-            <option value="wrong">Azure DDoS Protection</option>
+              <option value=""></option>
+            <option value="wrong">Sev1</option>
+            <option value="wrong">Sev2</option>
+            <option value="wrong">Sev0</option>
+            <option value="correct"Sev3</option>
+            <option value="wrong">Sev4</option>
         </select>
         <span class="output4"></span>
         <button onclick="getOption4()"> Check answer </button>
@@ -102,7 +99,28 @@
                 output = selectElement.value;
                 document.querySelector('.output4').textContent = output;
             }</script>
-        -Name 'LogAnalyticsExtLinux' -PolicyDefinition $policy -Scope $rg.ResourceId
+      
+    </p>
+      <p>
+        Verbose
+        <select id="select5">
+              <option value=""></option>
+            <option value="wrong">Sev1</option>
+            <option value="wrong">Sev2</option>
+            <option value="wrong">Sev0</option>
+            <option value="wrong"Sev3</option>
+            <option value="correct">Sev4</option>
+        </select>
+        <span class="output5"></span>
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption5() {
+                selectElement = document.querySelector('#select5');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
+      
     </p>
     <br />
     <a href="index.html">Home</a>
