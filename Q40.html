@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q40</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: lightsteelblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>You need to ensure that web1234578 is protected from malware by using Microsoft Antimalware for Virtual Machines and is scanned every Friday at 01:00</h2>
+    <p>You need to install and configure the Microsoft Antimalware extension on the virtual machine named web1234578</p>
+    <p>
+        1.In the Azure portal, type ____ in the search box, select _____ from the search results <b>web1234578</b>. Alternatively, browse to Virtual Machines in the left navigation pane.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong"><b>Add</b></option>
+            <option value="wrong"><b>Extensions</b></option>
+            <option value="wrong"><b>Microsoft Antimalware</b></option>
+            <option value="correct">Virtual Machines</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+            function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+
+    <P>
+        In the properties of web11597200, click on ________
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong"><b>Add</b></option>
+            <option value="correct"><b>Extensions</b></option>
+            <option value="wrong"><b>Microsoft Antimalware</b></option>
+            <option value="wrong">Virtual Machines</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        Click the ____ button to add an <b>Extension</b>
+        <select id="select3">
+            <option value=""></option>
+            <option value="correct"><b>Add</b></option>
+            <option value="wrong"><b>Extensions</b></option>
+            <option value="wrong"><b>Microsoft Antimalware</b></option>
+            <option value="wrong">Virtual Machines</option>
+        </select>
+
+        <span class="output3"></span>
+
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </P>
+
+    <P>
+        Scroll down the list of extensions and select
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong"><b>Add</b></option>
+            <option value="wrong"><b>Extensions</b></option>
+            <option value="correct"><b>Microsoft Antimalware</b></option>
+            <option value="wrong">Virtual Machines</option>
+        </select>
+
+        <span class="output4"></span>
+
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </P>
+    <P>
+        Click the _____ button. This will open the setting pane for <b>Microsoft Antimalware Extension</b>
+        <select id="select5">
+            <option value=""></option>
+            <option value="wrong"><b>Add</b></option>
+            <option value="wrong"><b>Extensions</b></option>
+            <option value="wrong"><b>Microsoft Antimalware</b></option>
+            <option value="correct">Create</option>
+        </select>
+
+        <span class="output5"></span>
+
+        <button onclick="getOption5()"> Check answer </button>
+
+        <script type="text/javascript">
+    function getOption5() {
+                selectElement = document.querySelector('#select5');
+                output = selectElement.value;
+                document.querySelector('.output5').textContent = output;
+            }</script>
+    </P>
+    <p>In the <b>Scan day</b> field, select <b>Friday</b></p>
+    <p>In the <b>Scan time</b> field, enter <b>60</b>. The scan time is measured in minutes after midnight so 60 would be 01:00, 120 would be 02:00 etc.</p>
+    <p>Click the OK button to save the configuration and install the extension</p>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q39.html">Previous Question</a>
+    <a href="Q41.html">Next Question</a>
+
+</body>
+</html>

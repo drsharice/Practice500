@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q41</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage Tag Governance</h1>
+ 
+        1.Prevents the creation of the tag if it is not met.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">DeployIfNotExist</option>
+            <option value="correct">Deny</option>
+            <option value="wrong">Modify</option>
+            <option value="wrong">indexed</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+
+    </p>
+    <p>
+        2.Adds a field but it does not ensure the tag exists and is populated.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">DeployIfNotExist</option>
+            <option value="wrong">Deny</option>
+            <option value="wrong">Modify</option>
+            <option value="wrong">indexed</option>
+            <option value="correct">Append</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+
+    </p>
+    <p>
+        3. Adds, replaces, or removes a property.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">DeployIfNotExist</option>
+            <option value="wrong">Deny</option>
+            <option value="correct">Modify</option>
+            <option value="wrong">indexed</option>
+            <option value="wrong">Append</option>
+        </select>
+        <span class="output3"></span>
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </p>
+    <p>
+        4. Is used to deploy an existing resource.
+        <select id="select4">
+            <option value=""></option>
+            <option value="wrong">DeployIfNotExist</option>
+            <option value="wrong">Deny</option>
+            <option value="wrong">Modify</option>
+            <option value="correct">indexed</option>
+            <option value="wrong">Append</option>
+        </select>
+        <span class="output4"></span>
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </p>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+    <a href="Q40.html">Pevious Question</a>
+    <a href="Q42.html">Next Question</a>
+</body>
+</html>
