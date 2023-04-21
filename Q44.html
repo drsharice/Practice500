@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q44</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: honeydew;
+        }
+    </style>
+</head>
+<body>
+  <p><h1>Azure Container Registery </h1>
+    </p>
+  <p> Publish and secure an image in Azure Container Registry </p>
+  <p> To publish an image, you first need a Registry.
+   
+
+    <p>
+       1. Highest amount of throughput and storage. Adds features like georeplication, content trust, and compatibility with Private Link.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Basic</option>
+            <option value="wrong">Standard</option>
+          <option value="correct">Premium</option>
+
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. Same as Basic, but with more storage and throuhput. This is the default option for production workloads.
+        <select id="select2">
+           <option value=""></option>
+            <option value="wrong">Basic</option>
+            <option value="correct">Standard</option>
+          <option value="wrong">Premium</option>
+
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        3. Cost-optimized, developer focused tier. Programmatically the same as other tiers. However, throughput and storage is adjusted for dev workloads
+        <select id="select3">
+            <option value=""></option>
+            <option value="correct">Basic</option>
+            <option value="wrong">Standard</option>
+          <option value="wrong">Premium</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q43.html">Previous Question</a>
+    <a href="Q45.html">Next Question</a>
+
+</body>
+</html>
+
+About
