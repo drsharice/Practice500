@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q45</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: honeydew;
+        }
+    </style>
+</head>
+<body>
+    <p>Mandatory Elements for template
+    </p>
+   
+
+    <p>
+        1. Controls the AZURE template version you'll be using to deploy FROM.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">resources</option>
+            <option value="correct">$schema</option>
+          <option value="wrong">contentVersion</option>
+
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. Is a value you define that helps keep track of the completed template version.
+        <select id="select2">
+           <option value=""></option>
+            <option value="wrong">resources</option>
+            <option value="wrong">$schema</option>
+          <option value="correct">contentVersion</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        3. Is where you'll build the services and configurations to be updated
+        <select id="select3">
+             <option value=""></option>
+            <option value="correct">resources</option>
+            <option value="wrong">$schema</option>
+          <option value="wrong">contentVersion</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q44.html">Previous Question</a>
+    <a href="Q46.html">Next Question</a>
+
+</body>
+</html>
+
