@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q42</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+    <h1>Deploying a Function - Hosting</h1>
+ 
+        1. Serverless, Pay based on per use, not per hour Scales according to need.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Consumption</option>
+            <option value="correct">Azure Application Insights</option>
+            <option value="wrong">App Service Plan</option>
+            <option value="wrong">Premium</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+
+    </p>
+    <p>
+        2.Ability to use underutilized resources on other App service instances.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Consumption</option>
+            <option value="wrong">Azure Application Insights</option>
+            <option value="correct">App Service Plan</option>
+            <option value="wrong">Premium</option>
+        </select>
+
+        <span class="output1"></span>
+        <button onclick="getOption2()"> Check answer </button>
+
+        <script type="text/javascript">function getOption2() {
+                selectElement = document.querySelector('#select2');
+                output = selectElement.value;
+                document.querySelector('.output1').textContent = output;
+            }</script>
+
+    </p>
+    <p>
+        3. Serverless, Pay based on per use, not per hour, Scales according to need, Access to premium compute, Keep instances always warm, VNet connectivity.
+        <select id="select3">
+             <option value=""></option>
+            <option value="wrong">Consumption</option>
+            <option value="wrong">Azure Application Insights</option>
+            <option value="wrong">App Service Plan</option>
+            <option value="correct">Premium</option>
+        </select>
+        <span class="output3"></span>
+        <button onclick="getOption3()"> Check answer </button>
+
+        <script type="text/javascript">function getOption3() {
+                selectElement = document.querySelector('#select3');
+                output = selectElement.value;
+                document.querySelector('.output3').textContent = output;
+            }</script>
+    </p>
+    <p>
+        4. ____ to monitor your function and record valuable runtime metrics.
+        <select id="select4">
+             <option value=""></option>
+            <option value="wrong">Consumption</option>
+            <option value="correct">Azure Application Insights</option>
+            <option value="wrong">App Service Plan</option>
+            <option value="wrong">Premium</option>
+        </select>
+        <span class="output4"></span>
+        <button onclick="getOption4()"> Check answer </button>
+
+        <script type="text/javascript">function getOption4() {
+                selectElement = document.querySelector('#select4');
+                output = selectElement.value;
+                document.querySelector('.output4').textContent = output;
+            }</script>
+    </p>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+    <a href="Q41.html">Pevious Question</a>
+    <a href="Q43.html">Next Question</a>
+</body>
+</html>
