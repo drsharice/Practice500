@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q10</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+
+        body {
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <p>Optional Elements Recap
+    </p>
+  
+    <p>
+        1. Helps to keep consistency between Azure and any Azure Stack locations you may have.
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">parameters</option>
+            <option value="wrong">functions</option>
+            <option value="wrong">outputs</option>
+            <option value="wrong">variables</option>
+            <option value="correct">apiProfile</option>
+        </select>
+
+        <span class="output"></span>
+        <button onclick="getOption()"> Check answer </button>
+        <script type="text/javascript">
+    function getOption() {
+                selectElement = document.querySelector('#select1');
+                output = selectElement.value;
+                document.querySelector('.output').textContent = output;
+            }</script>
+    </p>
+    <P>
+        2. Stores service parameters to be used during deployment.
+        <select id="select2">
+           <option value=""></option>
+            <option value="correct">parameters</option>
+            <option value="wrong">functions</option>
+            <option value="wrong">outputs</option>
+            <option value="wrong">variables</option>
+            <option value="wrong">apiProfile</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+        3. Is used to create and define variables for use throughout the template script.
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">parameters</option>
+            <option value="wrong">functions</option>
+            <option value="wrong">outputs</option>
+            <option value="correct">variables</option>
+            <option value="wrong">apiProfile</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    
+     <P>
+        4.Creates user-defined functions to use throughout yout template.
+        <select id="select4">
+             <option value=""></option>
+            <option value="wrong">parameters</option>
+            <option value="correct">functions</option>
+            <option value="wrong">outputs</option>
+            <option value="wrong">variables</option>
+            <option value="wrong">apiProfile</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output4"></span>
+    </p>
+    <button onclick="getOption4()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption4() {
+            selectElement = document.querySelector('#select4');
+            output = selectElement.value;
+            document.querySelector('.output4').textContent = output;
+        }</script>
+    <br />
+     <P>
+        5. returns values from deployed resources.
+        <select id="select5">
+            <option value=""></option>
+            <option value="wrong">parameters</option>
+            <option value="wrong">functions</option>
+            <option value="correct">outputs</option>
+            <option value="wrong">variables</option>
+            <option value="wrong">apiProfile</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output5"></span>
+    </p>
+    <button onclick="getOption5()"> Check answer </button>
+
+    <script type="text/javascript">
+    function getOption3() {
+            selectElement = document.querySelector('#select5');
+            output = selectElement.value;
+            document.querySelector('.output5').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+    <a href="Q45.html">Previous Question</a>
+    <a href="Q47.html">Next Question</a>
+
+</body>
+</html>
