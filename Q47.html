@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q47</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+
+   
+    <p>
+        You can associate an NSG to a ____
+    </p>
+   
+        <select id="select1">
+            <option value=""></option>
+            <option value="wrong">Virtual Network only</option>
+            <option value="wrong">Subnet only</option>
+            <option value="correct">Virtual Network and Subnet only</option>
+            <option value="wrong">None of the above/option>
+        </select>
+    </P>
+    <p>
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <P>
+        You can associate _______ NSGs to each virtualnetwork subnet and network interface on a virtual machine.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">One only</option>
+            <option value="correct">Zero or One</option>
+            <option value="wrong">Zero</option>
+            <option value="wrong">None of the above</option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+      The same NSG can be associated to as many ________ as you choose.
+
+        <select id="select3">
+            <option value=""></option>
+            <option value="correct">subnet only</option>
+            <option value="wrong">NIC only</option>
+            <option value="wrong">subnets and network interfaces</option>
+            <option value="wrong">None of the above</option>
+        </select>
+    </P>
+    <p>
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+
+    <a href="Q46.html">Pevious Question</a>
+    <a href="Q48.html">Next Question</a>
+
+</body>
+</html>
