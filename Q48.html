@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Q48</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: "Georgia";
+        }
+    </style>
+</head>
+<body>
+
+   
+    <p>
+        You can block outbound traffic with an NSG that's placed on your integration 
+      subnet. The inbound rules don't apply because you can't use virtual network integration
+      to provide inbound access to your app.
+    </p>
+   
+        <select id="select1">
+            <option value=""></option>
+            <option value="correctt">Network Security group</option>
+            <option value="wrong">Route tables (UDRs)</option>
+            <option value="wrong">NAT gateway</option>
+            <option value="wrong">None of the above/option>
+        </select>
+    </P>
+    <p>
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }</script>
+    <P>
+      You can place a route table on the integration subnet to send outbound traffic where you want.
+        <select id="select2">
+            <option value=""></option>
+            <option value="wrong">Network Security group</option>
+            <option value="correct">Route tables (UDRs)</option>
+            <option value="wrong">NAT gateway</option>
+            <option value="wrong">None of the above/option>
+        </select>
+    </P>
+    <p>
+
+        <span class="output1"></span>
+    </p>
+    <button onclick="getOption2()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption2() {
+            selectElement = document.querySelector('#select2');
+            output = selectElement.value;
+            document.querySelector('.output1').textContent = output;
+        }</script>
+
+
+    <P>
+      You can use _______ to get a dedicated outbound IP and mitigate SNAT port exhaustion
+
+        <select id="select3">
+            <option value=""></option>
+            <option value="wrong">Network Security group</option>
+            <option value="wrong">Route tables (UDRs)</option>
+            <option value="correct">NAT gateway</option>
+            <option value="wrong">None of the above/option>
+        </select>
+    </P>
+    <p>
+        <span class="output3"></span>
+    </p>
+    <button onclick="getOption3()"> Check answer </button>
+
+    <script type="text/javascript">
+        function getOption3() {
+            selectElement = document.querySelector('#select3');
+            output = selectElement.value;
+            document.querySelector('.output3').textContent = output;
+        }</script>
+    <br />
+    <a href="index.html">Home</a>
+    <br />
+
+
+    <a href="Q47.html">Pevious Question</a>
+    <a href="Q49.html">Next Question</a>
+
+</body>
+</html>
